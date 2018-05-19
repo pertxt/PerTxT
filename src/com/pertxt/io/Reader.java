@@ -114,23 +114,5 @@ public class Reader {
       return null;
     }
   }
-
-  public void writeCompressedFile(String fileName, String value) {
-    try {
-      InputStream is = new ByteArrayInputStream(value.getBytes());
-      GZIPOutputStream gzipOS = new GZIPOutputStream(new FileOutputStream(fileName));
-
-      byte[] buffer = new byte[1024];
-      int len;
-      while ((len = is.read(buffer)) != -1) {
-        gzipOS.write(buffer, 0, len);
-      }
-      gzipOS.close();
-      is.close();
-    } catch (IOException ex) {
-      System.out.println("Writing failed!");
-    }
-  }
-
 }
 

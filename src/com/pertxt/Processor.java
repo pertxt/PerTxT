@@ -10,8 +10,6 @@ import com.pertxt.normalizer.Normalizer;
 import com.pertxt.posTagger.POSTagger;
 import com.pertxt.tokenizer.SentenceTokenizer;
 import com.pertxt.tokenizer.WordTokenizer;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Processor {
 
@@ -22,7 +20,7 @@ public class Processor {
     POSTagger posTagger = new POSTagger();
 
     System.out.println("PerTxT: Pre-alpha version!");
-    String inSentence = "";
+    String inSentence;
     while (true) {
       System.out.println("Enter your sentence: ");
       java.util.Scanner scanner = new java.util.Scanner(System.in);
@@ -40,7 +38,6 @@ public class Processor {
       System.out.println("Number of sentences: " + document.size());
 
       for (int i = 0; i < document.size(); i++) {
-        //System.out.println(document.get(i).toString());
         wordTokenizer.process(document.get(i));
         System.out.println("Sentence number " + (i + 1) + " is: " + document.get(i).toString());
         posTagger.process(document.get(i));
@@ -50,10 +47,6 @@ public class Processor {
 
       wordTokenizer.process(sentence);
       System.out.println("WordTokenizer: Your sentence is: " + sentence.toString());
-
-      //posTagger.process(sentence);
-      //System.out.println("POSTagger: Your sentence is: " + sentence.toString());
-
     }
   }
 }

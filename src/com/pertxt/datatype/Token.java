@@ -7,7 +7,6 @@ import java.util.LinkedList;
  * Created by dehghan on 8/24/2017.
  */
 public class Token {
-
   //Feature works!
   private String lemma;
   private boolean stopWord = false;

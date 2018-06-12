@@ -2,12 +2,9 @@ package com.pertxt.datatype;
 
 import java.util.LinkedList;
 
-
 public class Document extends LinkedList<Sentence>
 {
     /*private LinkedList<Sentence> sentences=new LinkedList<>();*/
-
-
     //Copy constructor
     public Document(Document document) {
         for (Sentence sentence : document) {

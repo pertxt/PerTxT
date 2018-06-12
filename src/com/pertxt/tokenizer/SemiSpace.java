@@ -1,6 +1,6 @@
 package com.pertxt.tokenizer;
 
-import com.pertxt.dataType.Sentence;
+import com.pertxt.datatype.Sentence;
 
 public class SemiSpace
 {

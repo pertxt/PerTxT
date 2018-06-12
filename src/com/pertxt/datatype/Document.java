@@ -1,4 +1,4 @@
-package com.pertxt.dataType;
+package com.pertxt.datatype;
 
 import java.util.LinkedList;
 

@@ -1,10 +1,10 @@
-package com.pertxt.posTagger;
+package com.pertxt.postagger;
 
 
 //import edu.stanford.nlp.tagger.maxent.MaxentTagger;
-import com.pertxt.dataType.Sentence;
+import com.pertxt.datatype.Sentence;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
-import com.pertxt.dataType.Token;
+import com.pertxt.datatype.Token;
 
 public class POSTagger
 {

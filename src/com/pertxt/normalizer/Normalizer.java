@@ -1,6 +1,6 @@
 package com.pertxt.normalizer;
 
-import com.pertxt.dataType.Sentence;
+import com.pertxt.datatype.Sentence;
 import com.pertxt.io.Reader;
 import java.util.List;
 import java.util.Map;

@@ -1,6 +1,5 @@
-package com.pertxt.dataType;
+package com.pertxt.datatype;
 
-import com.pertxt.dataType.Token;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

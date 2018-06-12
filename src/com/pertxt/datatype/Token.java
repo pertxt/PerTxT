@@ -162,10 +162,28 @@ public class Token {
     /**
      * Returns <code>true</code> if this token is a stop word
      *
-     * @return <code>true</code> if this token is a stop word
      */
     public boolean isStopWord() {
         return stopWord;
+    }
+
+    /**
+     * Returns <code>true</code> if this token is equal input token
+     *
+     */
+    public boolean equals(Token token) {
+        if (
+                this.lemma.equals(token.lemma) &&
+                        this.stopWord == token.stopWord &&
+                        this.chunkTag.equals(token.chunkTag) &&
+                        this.neTag.equals(token.neTag) &&
+                        this.posTag.equals(token.posTag) &&
+                        this.toString().equals(token.toString())
+
+
+                )
+            return true;
+        return false;
     }
 
 }

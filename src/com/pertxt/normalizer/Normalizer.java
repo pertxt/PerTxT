@@ -9,11 +9,11 @@ public class Normalizer {
 
   private final Map<Character, Character> charSet;
   private final List<Character> validCharSet;
-  private String currentPath=System.getProperty("user.dir");
+  private String currentPath = System.getProperty("user.dir");
 
   public Normalizer() {
-    charSet = new Reader().readMap(currentPath+"/resources/normalizer/replaceChars.txt");
-    validCharSet = new Reader().readChars(currentPath+"/resources/normalizer/validChars.txt");
+    charSet = new Reader().readMap(currentPath + "/resources/normalizer/replaceChars.txt");
+    validCharSet = new Reader().readChars(currentPath + "/resources/normalizer/validChars.txt");
   }
 
   public Normalizer(String charSetFile, String validCharFile) {
@@ -79,7 +79,6 @@ public class Normalizer {
   public String process(String sentence) {
     Sentence tmpSentence = new Sentence(sentence);
     process(tmpSentence);
-
     return tmpSentence.toString();
   }
 }

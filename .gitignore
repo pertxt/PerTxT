@@ -9,3 +9,5 @@ out
 gen
 /resources/
 /target/
+logs/
+src/test/

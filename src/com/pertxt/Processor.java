@@ -1,7 +1,7 @@
 package com.pertxt;
 
 /**
- * This is the pre-alpha version of PerTxT
+ * This is a pre-alpha version of PerTxT
  */
 
 import com.pertxt.datatype.Document;
@@ -10,16 +10,19 @@ import com.pertxt.normalizer.Normalizer;
 import com.pertxt.postagger.POSTagger;
 import com.pertxt.tokenizer.SentenceTokenizer;
 import com.pertxt.tokenizer.WordTokenizer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Processor {
 
+    private static Logger log = LogManager.getLogger(Processor.class.getName());
     public static void main(String[] args) {
 
         Normalizer normalizer = new Normalizer();
         WordTokenizer wordTokenizer = new WordTokenizer();
         POSTagger posTagger = new POSTagger();
 
-        System.out.println("PerTxT: Pre-alpha version!");
+        log.info("PerTxT: Pre-alpha version!");
         String inSentence = "";
         while (true) {
             System.out.println("Enter your sentence: ");

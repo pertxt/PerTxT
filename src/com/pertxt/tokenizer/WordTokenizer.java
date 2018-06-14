@@ -1,10 +1,10 @@
 package com.pertxt.tokenizer;
 
 import java.util.HashSet;
-import com.pertxt.dataType.Document;
-import com.pertxt.dataType.Token;
+import com.pertxt.datatype.Document;
+import com.pertxt.datatype.Token;
 import com.pertxt.io.Reader;
-import com.pertxt.dataType.Sentence;
+import com.pertxt.datatype.Sentence;
 
 import java.util.List;
 import java.util.regex.Matcher;

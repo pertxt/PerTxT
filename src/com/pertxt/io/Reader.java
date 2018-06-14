@@ -3,7 +3,6 @@ package com.pertxt.io;
 import java.io.*;
 import java.util.*;
 import java.util.zip.GZIPInputStream;
-import java.util.zip.GZIPOutputStream;
 
 public class Reader {
 
@@ -11,7 +10,6 @@ public class Reader {
 
     Iterator<String> itr = readConfigFile(inputFileAddress).iterator();
     List<Character> charResult = new LinkedList<>();
-    int cntCharResult = 0;
     while (itr.hasNext()) {
       String tmp = itr.next();
       if (tmp.equals("\\u200C")) {
@@ -28,7 +26,6 @@ public class Reader {
 
     Iterator<String> itr = readConfigFile(inputFileAddress).iterator();
     Map<Character, Character> charResult = new HashMap<>();
-    int cntCharResult = 0;
     while (itr.hasNext()) {
       String tmpItr = itr.next();
       charResult.put(tmpItr.split("\t")[0].charAt(0), tmpItr.split("\t")[1].charAt(0));

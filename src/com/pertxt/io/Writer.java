@@ -11,13 +11,7 @@ import java.util.zip.GZIPOutputStream;
 
 public class Writer {
 
-  //private static final int ITERATIONS = 5;
-  //private static final double MEG = (Math.pow(1024, 2));
-  //private static final int RECORD_COUNT = 4000000;
-  //private static final String RECORD = "Help I am trapped in a fortune cookie factory\n";
-  //private static final int RECSIZE = RECORD.getBytes().length;
-
-  public void writeRaw(List<String> records, String outputFileName) {
+ public void writeRaw(List<String> records, String outputFileName) {
     try {
       File file = new File(outputFileName);
       try {
